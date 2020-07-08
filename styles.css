@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+.edit{
+  width: 40vw;
+  height: 75vh;
+  margin: 20px 0px 0px 20px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+.prev{
+    width: 40vw;
+    height:75vh;
+    margin: 20px 20px 0px 0px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+
+.edi,.pre{
+    width: 40vw;
+    background-color: grey;
+    text-align: center;
+    font-family: 'Poppins';
+    border-radius: 6px 6px 0px 0px;
+    font-size: 25px;
+    color: white;
+}
+
+#editor {
+    width: 40vw;
+    height: 70vh;  
+    color: white;
+    background-color: rgb(48, 48, 48);
+    border-radius: 0px 0px 6px 6px;
+    padding: 20px 0px 0px 20px;
+    font-family: 'Poppins';
+    /* width */
+
+}
+
+#preview {
+    width: 40vw;
+    height: 70vh;
+    border-radius: 0px 0px 6px 6px;
+    padding: 20px 0px 0px 20px;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+.full {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width:500px) {
+    .full {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .edit, .prev, .edi, .pre, #editor, #preview {
+        width : 85vw;
+    }
+
+    .edit, .prev{
+        margin: 20px 0px 0px 0px;
+    }
+
+    .prev {
+        margin-bottom: 75px;
+    }
+}
+
+header {
+    background-color: rgb(63, 206, 75);
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+    font-family: 'Poppins';
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 13px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+}
